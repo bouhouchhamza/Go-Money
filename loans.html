@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go-Money</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <main>
+        <header>
+            <div class="logo"><h1>Go-Money</h1></div>
+            <nav>
+                <button type="button">Sign-in</button>
+                <button type="button">Contact-Us</button>
+            </nav>
+        </header>
+        <section class="hero-section">
+                <img src="6cee432e-27c4-409c-bcec-cc076916afeb.png" alt="">
+            <div class="desc">
+                <h2>Bienvenue dans l’univers des services financiers innovants</h2>
+                <p>Découvrez nos solutions bancaires simples et sécurisées, et commencez votre parcours financier en toute confiance.</p>
+                <button type="button">Commencez maintenant</button>
+            </div>
+        </section>
+        <br>
+        <section class="">
+            <div>
+            <figure class="text-center">
+  <blockquote class="blockquote">
+    <p>Laon Calculator</p>
+  </blockquote>
+  <figcaption class="blockquote-footer">
+    calculate your monthly paymenet<cite title="Source Title">and total loan cost</cite>
+  </figcaption>
+</figure>
+<div>
+</div>
+</div>
+<div class="grid-list">
+  <form class="grid-items" action="#">
+    <div>
+      <h3>Loan Details</h3>
+      <label for="Loan-Type">🏦 Loan Type</label>
+      <select name="Loan-Type" id="Loan-Type">
+        <option value="" disabeled selected>-- 🔽 Select Loan Type --</option>
+        <option value="Maison">🏠 Maison</option>
+        <option value="Appartement">🏢 Appartement</option>
+        <option value="Terrain">🌳 Terrain</option>
+        <option value="Petite entreprise">💼 Petite entreprise</option>
+        <option value=Prêt">💸 Prêt personnel (cash)</option>
+      </select>
+    </div>
+    <div>
+      <label for="Loan-Amount">Loan Amount</label>
+      <input  type="number" placeholder="Enter amount in MAD" name="Loan Amount" id="Loan-amount" required>
+    </div>
+    <div class="Loan-Term">
+      <label for="Loan-Term">Loan Term</label>
+      <div class="Loan-Term-select"  style="display: flex; gap: 25px; flex-direction: row; justify-content: space-between;"  >
+      <input type="number" placeholder="e.g. 5 (years) or 60 (months)" name="Loan-Term" id="Loan-Term" required>
+      <select id="term-select">
+        <option value="Years">Years</option>
+        <option value="Month">Monthly</option>
+      </select>
+    </div>
+    </div>
+    <div>
+      <label for="Monthly-Salary">Monthly Salary</label>
+      <input type="number" placeholder="Enter your monthly salary in MAD" name="Monthly-Salary" id="Monthly-Salary" required>
+    </div>
+    <div>
+      <label for="Purpose-of-the-Loan">Purpose of the Loan</label>
+      <textarea placeholder="Explain why you need this loan (optional)" name="Purpose-of-the-Loan" id="Purpose-of-the-Loan"></textarea>
+    </div>
+    <button id="simulateBtn" type="button"> ✅ Simulate Loan</button>
+  </form>
+
+  <div>
+    <div class="grid-items-2">
+     <h3>Result:</h3>
+  <p><strong>🏦 Loan Type:</strong> <span id="result-loan-type">---</span></p>
+  <p><strong>💰 Loan Amount:</strong> <span id="result-amount">---</span></p>
+  <p><strong>📈 Interest Rate:</strong> <span id="result-interest">---</span></p>
+  <p><strong>💵 Monthly Payment:</strong> <span id="result-monthly">---</span></p>
+  <p><strong>💸 Total Interest:</strong> <span id="result-total-interest">---</span></p>
+  <p><strong>💳 Total Repayment:</strong> <span id="result-total">---</span></p>
+  <div id="alert-box" class="alert alert-secondary" role="alert">
+    A simple secondary alert—check it out!
+  </div>
+</div>
+      </div>
+      </div>
+      </section>
+        </main>
+    <footer>
+        <h3>Go-Money</h3>
+        <p>powered-by-go-money.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
