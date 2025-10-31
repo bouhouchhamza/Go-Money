@@ -49,8 +49,8 @@
         <option value="Maison">🏠 Maison</option>
         <option value="Appartement">🏢 Appartement</option>
         <option value="Terrain">🌳 Terrain</option>
-        <option value="Petite entreprise">💼 Petite entreprise</option>
-        <option value=Prêt">💸 Prêt personnel (cash)</option>
+        <option value="Petite_entreprise">💼 Petite entreprise</option>
+        <option value="Prêt">💸 Prêt personnel (cash)</option>
       </select>
     </div>
     <div>
@@ -75,17 +75,17 @@
       <label for="Purpose-of-the-Loan">Purpose of the Loan</label>
       <textarea placeholder="Explain why you need this loan (optional)" name="Purpose-of-the-Loan" id="Purpose-of-the-Loan"></textarea>
     </div>
-    <button id="simulateBtn" type="button"> ✅ Simulate Loan</button>
+    <button  id="simulateBtn" type="button"> ✅ Simulate Loan</button>
   </form>
 
   <div>
     <div class="grid-items-2">
      <h3>Result:</h3>
-  <p><strong>🏦 Loan Type:</strong> <span id="result-loan-type">---</span></p>
+  <p><strong>🏦 Loan Type:</strong> <span id="result-type">---</span></p>
   <p><strong>💰 Loan Amount:</strong> <span id="result-amount">---</span></p>
   <p><strong>📈 Interest Rate:</strong> <span id="result-interest">---</span></p>
   <p><strong>💵 Monthly Payment:</strong> <span id="result-monthly">---</span></p>
-  <p><strong>💸 Total Interest:</strong> <span id="result-total-interest">---</span></p>
+  <p><strong>💸 Total Interest:</strong> <span id="total-interest">---</span></p>
   <p><strong>💳 Total Repayment:</strong> <span id="result-total">---</span></p>
   <div id="alert-box" class="alert alert-secondary" role="alert">
     A simple secondary alert—check it out!
